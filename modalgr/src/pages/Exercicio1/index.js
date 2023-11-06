@@ -20,12 +20,12 @@ export default function Ex1(){
         <div>
             <h1>Senhas:</h1>
             {senhas.map((item)=>{
-                return <h1>{item}</h1>
+                return <h2>{item}</h2>
             })}
             <h1>Senhas encriptadas:</h1>
             {senhas.map((item)=>{
                 let test = subs(item, chaveSecreta)
-                return <h1>{test}</h1>
+                return <h2>{test}</h2>
             })}
         </div>
     )
