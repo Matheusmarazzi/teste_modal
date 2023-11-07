@@ -1,0 +1,9 @@
+#Ex1{
+    width: 100%;
+    background-color: #00ff50;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: white;
+
+  }

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import './style.css'
 
 
 export default function Ex3(){
@@ -96,11 +97,14 @@ export default function Ex3(){
 
 
     return(
-        <div>
+        <div id='Ex3'>
             {(!valido) ? "Agradecemos seu interesse, mas você não atende os requisitos mínimos do programa": 
                 (<>
+                    <h3>Digite seu salario:</h3>
                     <input type="text" value={salario} onChange={(e)=>setSalario(e.target.value)} />
+                    <h3>Digite seu tempo na empresa:</h3>
                     <input type="text" value={tempo} onChange={(e)=>setTempo(e.target.value)} />
+                    <h3>Digite o valor do emprestimo:</h3>
                     <input type="text" value={retirada} onChange={(e)=>setRetirada(e.target.value)} />
                     <label>
                         <input
@@ -130,12 +134,13 @@ export default function Ex3(){
                         meio a meio
                     </label>
                     <button onClick={handleFinish(retirada, tipo, salario, tempo)}>Finalizar</button>
-                        {'100:'+cem+'\n'}
-                        {'50:'+cinq+'\n'}
-                        {'20:'+vin+'\n'}
-                        {'10:'+dez+'\n'}
-                        {'5:'+cinc+'\n'}
-                        {'2:'+dois+'\n'}    
+                    <h3>Notas a receber</h3>
+                        {'100x'+cem+'\n'}
+                        {'50x'+cinq+'\n'}
+                        {'20x'+vin+'\n'}
+                        {'10x'+dez+'\n'}
+                        {'5x'+cinc+'\n'}
+                        {'2x'+dois+'\n'}    
                     
             </>) }
            

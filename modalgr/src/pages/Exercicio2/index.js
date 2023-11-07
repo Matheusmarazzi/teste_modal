@@ -1,4 +1,4 @@
-
+import './style.css';
 
 
 
@@ -21,10 +21,10 @@ export default function Ex2(){
 
   })
   return(
-    <div>
-        <h1>Arquivo TXT geral:</h1>
+    <div id="Ex2">
+        <h4>Arquivo TXT geral:</h4>
         <p>{texto}</p>
-        <h1>Arquivo TXT com aniversariantes do mês:</h1>
+        <h4>Arquivo TXT com aniversariantes do mês:</h4>
         <p>{aniversariante}</p>
 
     </div>

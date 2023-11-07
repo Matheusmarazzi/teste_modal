@@ -1,4 +1,4 @@
-
+import './style.css';
 
 
 
@@ -6,26 +6,23 @@ export default function Ex1(){
     const senhas = [12345, 54321, 1325]
     const chaveSecreta = '#modalGR#GPTW#top#maiorEmpresaTecnologia#baixadaSantista'
 
-    
-
-
     function subs(senha, chave){
         let encrip = senha + chave;
         encrip = encrip.replace(/4/g, 'A').replace(/3/g, 'E').replace('GR', 6).replace('a', 320).replace('Tec', 140)
         return encrip
     }
 
-    
     return(
-        <div>
-            <h1>Senhas:</h1>
+        <div id='Ex1'>
+            <h1>Desafio 1</h1>
+            <h3>Senhas:</h3>
             {senhas.map((item)=>{
-                return <h2>{item}</h2>
+                return <p>{item}</p>
             })}
-            <h1>Senhas encriptadas:</h1>
+            <h3>Senhas encriptadas:</h3>
             {senhas.map((item)=>{
                 let test = subs(item, chaveSecreta)
-                return <h2>{test}</h2>
+                return <p>{test}</p>
             })}
         </div>
     )

@@ -1,0 +1,26 @@
+#Ex3{
+    width: 100%;
+    background-color: #ff00ff;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: white;
+  }
+  input[type="text"]{
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+    
+  }
+  label{
+    text-align: center;
+  }
+  button{
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00ff50;
+    font-size: 18px;
+    
+  }
